@@ -29,6 +29,7 @@ public class SearchIndex {
         for(int i = 0;i<scoreDocs.length;i++){
             ScoreDoc scoreDoc = scoreDocs[i];
             int doc = scoreDoc.doc;
+			
             Document document = indexSearcher.doc(doc);
             System.out.println("分数："+scoreDoc.score);
             System.out.println("编号："+document.get("id"));
@@ -37,7 +38,7 @@ public class SearchIndex {
             System.out.println("内容："+document.get("content"));
             System.out.println("时间："+document.get("date"));
             System.out.println();
-
+			System.out.println();
         }
     }
 }

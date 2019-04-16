@@ -40,6 +40,7 @@ public class CreateIndex {
 
         indexWriter.commit();
         indexWriter.close();
+		  
 
     }
 }
